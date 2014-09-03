@@ -66,7 +66,7 @@ class MainForm: Form
         }
 		
         with (label01 = new Label) {
-            label01.text = "Label01:\r\nここでマウス左ボタンで Drag する";
+            label01.text = "Label01:\r\nDrugs in this window";
             top  = myGroup.bottom + 4;
             left = 4;
             width = this.clientSize.width - 8;
@@ -81,7 +81,7 @@ class MainForm: Form
             parent = this;
         }
         with (label02 = new Label) {
-            label02.text = "Label02:\r\n↓ここに Drop する";
+            label02.text = "Label02:\r\n↓Drop here↓";
             top  = label01.bottom + 4;
             left = 4;
             width = this.clientSize.width - 8;

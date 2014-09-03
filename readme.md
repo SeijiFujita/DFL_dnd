@@ -8,7 +8,7 @@ dfl のDrag and Drop との関数の互換性はありません。
 もしかして誰か必要かもしれないのでとりあえずアップロード版です。
 
 ## Building Requirements
-- Compiler: [DMD] v2.065
+- Compiler: [DMD] v2.065, v2.066
 
 [DMD]: http://dlang.org/download.html
 
