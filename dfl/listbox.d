@@ -987,7 +987,8 @@ class ListBox: ListControl // docmain
 		{
 			Object[] itemscopy;
 			itemscopy = icollection._items.dup;
-			itemscopy.sort;
+//@@		itemscopy.sort;
+			std.algorithm.sort(itemscopy);
 			
 			items.clear();
 			

@@ -1,6 +1,7 @@
 @echo off 
 @rem set path=C:\D\dmd.2.065.0\windows\bin;C:\D\dm\bin;
-set path=C:\D\dmd.2.066.0\windows\bin;C:\D\dm\bin;
+@rem set path=C:\D\dmd.2.066.0\windows\bin;C:\D\dm\bin;
+set path=C:\D\dmd.2.067.0\windows\bin;
 
 @echo on
 

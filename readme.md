@@ -1,14 +1,14 @@
 Drag and Drop Example for dfl
 -----------------------------
-dfl のDrag and Drop が動作が不安定なので自分なりに変更しました。
-dfl のソースを適当に変更しています、したがってオリジナルの
-dfl のDrag and Drop との関数の互換性はありません。
+dfl の Drag and Drop が動作が不安定なので自分なりに変更しました。
+dfl オリジナル Drag and Drop関係の関数との互換性はまったくありません。
+
 詳しくはサンプルの dndText.d を参照してください。
 
 もしかして誰か必要かもしれないのでとりあえずアップロード版です。
 
 ## Building Requirements
-- Compiler: [DMD] v2.065, v2.066
+- Compiler: [DMD] v2.065, v2.066, v2.067
 
 [DMD]: http://dlang.org/download.html
 

@@ -23,14 +23,14 @@ private import dfl.internal.clib;
 
 private
 {
-	private import std.socket;
-	private import core.bitop;
-	private import std.c.windows.winsock;
+	import std.socket;
+	import core.bitop;
+	import std.c.windows.winsock;
 	
 	alias InternetHost DInternetHost;
 	alias InternetAddress DInternetAddress;
 	
-	socket_t getSocketHandle(Socket sock)
+	socket_t getSocketHandle(Socket sock) pure nothrow @nogc
 	{
 		return sock.handle;
 	}
@@ -56,7 +56,7 @@ private
 	}
 	
 	
-	extern(Windows) int WSAAsyncSelect(socket_t s, HWND hWnd, UINT wMsg, int lEvent);
+	extern(Windows) int WSAAsyncSelect(socket_t s, HWND hWnd, UINT wMsg, int lEvent) nothrow @nogc @system;
 }
 
 
@@ -109,7 +109,7 @@ void registerEvent(DflSocket sock, EventType events, RegisterEventCallback callb
 }
 
 
-void unregisterEvent(DflSocket sock) // deprecated
+void unregisterEvent(DflSocket sock) nothrow @trusted @nogc // deprecated
 {
 	WSAAsyncSelect(getSocketHandle(sock), hwNet, 0, 0);
 	
@@ -144,7 +144,7 @@ class AsyncSocket: DflSocket // docmain
 	
 	/// ditto
 	// For use with accept().
-	protected this()
+	protected this() pure nothrow @safe @nogc
 	{
 	}
 	

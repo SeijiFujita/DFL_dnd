@@ -2,9 +2,10 @@
 
 rem set path=C:\D\dmd.2.064.2\windows\bin;C:\D\dm\bin;
 rem set path=C:\D\dmd.2.065.0\windows\bin;C:\D\dm\bin;
-set path=C:\D\dmd.2.066.0\windows\bin;C:\D\dm\bin;
+rem set path=C:\D\dmd.2.066.0\windows\bin;C:\D\dm\bin;
+set path=C:\D\dmd.2.067.0\windows\bin;
 
-set dmd_path=C:\D\dmd.2.066.0
+set dmd_path=C:\D\dmd.2.067.0
 
 @rem -------------------------------------------------------------------
 set dfl_debug_flags=-debug -g

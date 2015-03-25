@@ -1,5 +1,9 @@
 /++++
-Drag And Drop Test.d
+Drag and Drop Example for dfl
+dmd 2.067.0
+
+// This code is public domain.
+
 漢字　表示　テスト
 ++++/
 import dfl.all;
@@ -66,7 +70,7 @@ class MainForm: Form
         }
 		
         with (label01 = new Label) {
-            label01.text = "Label01:\r\nDrugs in this window";
+            label01.text = "Label01:\r\n This place is Drag.";
             top  = myGroup.bottom + 4;
             left = 4;
             width = this.clientSize.width - 8;
@@ -81,7 +85,7 @@ class MainForm: Form
             parent = this;
         }
         with (label02 = new Label) {
-            label02.text = "Label02:\r\n↓Drop here↓";
+            label02.text = "Label02:\r\n ↓Drop here.↓";
             top  = label01.bottom + 4;
             left = 4;
             width = this.clientSize.width - 8;
